@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+}
+
+#messages {
+    width: 80%;
+    padding: 0px 5% 10px 5%;
+    margin: 20px;
+    height: 50vh;
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#messages > .message-container {
+    width: 100%;
+    /*padding: 0 10%;*/
+    text-align: right;
+}
+
+#messages > .message-container > p {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+#messages > .message-container > span {
+    font-size: 0.8em;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form > #message {
+    width: 50%;
+    font-size: 1.2em;
+}
+
+.form > #submit {
+    width: 30%;
+    margin: 2%;
+    height: 3vh;
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.form > #submit:hover {
+    background-color: black;
+    font-size: 1.5em;
+}

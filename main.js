@@ -51,6 +51,7 @@ function showMessages(messages) { // This function format the messages in HTML a
 function getMessages() { //This function get all the messages into the collection
     db
     .collection('messages')
+    .orderBy('timestamp')
     .onSnapshot(function(querySnapshot) { // With onSnapshot method, we get the messages, and also, each time that the DB is updated (i.e. a new message is added), this function detect this (realtime ;))
         let messages = []; // Create a dynamic empty array to store messages
         querySnapshot.forEach(function(message) { //Loop the messages
